@@ -438,16 +438,20 @@
             </ul>
           </div>
           <div class="footer-form">
-            <span class="literal-cta">присоединяйтесь</span>
-            <form>
-              <input type="email" name="email" placeholder="E-mail" />
-              <button type="submit">Подписаться</button>
+            <span class="literal-cta">Подпишитесь на рассылку</span>
+            <form class="form-mailing">
+              <input class="mail-input" type="email" name="email" placeholder="E-mail" />
+              <button class="cta button-subscribe" type="submit">
+                Подписаться<svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
       </div>
     </footer>
-    <div data-modal class="backdrop 1is-hidden" data-backdrop>
+    <div data-modal class="backdrop is-hidden" data-backdrop>
       <div class="modal">
         <button data-modal-close type="button" class="close">
           <svg class="x">
@@ -461,14 +465,23 @@
             <li class="input-item">
               <label for="name">Имя</label>
               <input class="input" type="text" name="name" id="name" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
             </li>
             <li class="input-item">
               <label for="tel">Телефон</label>
               <input class="input" type="number" name="tel" id="tel" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             </li>
             <li class="input-item">
               <label for="email">Почта</label>
               <input class="input" type="email" name="email" id="email" />
+              <svg class="input-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
             </li>
             <li class="input-item">
               <label for="comment">Комметарий</label>
@@ -482,10 +495,16 @@
           </ul>
 
           <div class="agree-field">
-            <input type="checkbox" name="agree" id="agree" />
-            <label for="agree"
-              >Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label
-            >
+            <input class="checkbox" type="checkbox" name="agree" id="agree" />
+
+            <label class="label-agree" for="agree"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="license-agreement" href="">Условия договора</a>
+              <div class="check-bg"></div>
+              <svg class="check-icon" width="16" height="15">
+                <use width="11.3" href="./images/icons.svg#icon-4aika"></use>
+              </svg>
+            </label>
           </div>
           <button class="cta" type="submit">Отправить</button>
         </form>
