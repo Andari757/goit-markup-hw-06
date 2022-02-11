@@ -29,7 +29,7 @@
   list-style: none;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -393,7 +393,6 @@
 }
 
 .clients-list-item {
-  box-sizing: border-box;
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -478,7 +477,48 @@
   background-color: transparent;
   cursor: pointer;
 }
-.portfolio {
+.callMe {
+  padding: 40px;
+}
+.modal-cta {
+  font-weight: 700;
+  font-size: 20px;
+
+  text-align: center;
+  color: var(--title-colour);
+}
+.input-list {
+  margin-top: 12px;
+}
+.input-item:not(:first-child) {
+  margin-top: 10px;
+}
+.input {
+  width: 100%;
+}
+.agree-field {
+  margin-top: 20px;
+}
+.textarea {
+  padding: 12px;
+  resize: none;
+  height: 120px;
+  width: 100%;
+  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.01em;
+}
+.agree-field {
+  padding: 0 11px;
+}
+
+/* 
+
+
+page end 
+
+
+*/
+. .portfolio {
   padding: 94px 0;
 }
 .list-filters {
@@ -566,7 +606,6 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-desc {
-  box-sizing: border-box;
   position: absolute;
   bottom: -294px;
   width: 370px;

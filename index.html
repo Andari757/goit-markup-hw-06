@@ -9,13 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="page">
@@ -443,16 +437,58 @@
               </li>
             </ul>
           </div>
+          <div class="footer-form">
+            <span class="literal-cta">присоединяйтесь</span>
+            <form>
+              <input type="email" name="email" placeholder="E-mail" />
+              <button type="submit">Подписаться</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
-    <div data-modal class="backdrop is-hidden" data-backdrop>
+    <div data-modal class="backdrop 1is-hidden" data-backdrop>
       <div class="modal">
         <button data-modal-close type="button" class="close">
           <svg class="x">
             <use href="./images/icons.svg#icon-x"></use>
           </svg>
         </button>
+        <form class="callMe">
+          <span class="modal-cta">Оставьте свои данные, мы вам перезвоним</span>
+
+          <ul class="input-list list">
+            <li class="input-item">
+              <label for="name">Имя</label>
+              <input class="input" type="text" name="name" id="name" />
+            </li>
+            <li class="input-item">
+              <label for="tel">Телефон</label>
+              <input class="input" type="number" name="tel" id="tel" />
+            </li>
+            <li class="input-item">
+              <label for="email">Почта</label>
+              <input class="input" type="email" name="email" id="email" />
+            </li>
+            <li class="input-item">
+              <label for="comment">Комметарий</label>
+              <textarea
+                class="textarea"
+                placeholder="Введите текст"
+                name="comment"
+                id="comment"
+              ></textarea>
+            </li>
+          </ul>
+
+          <div class="agree-field">
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree"
+              >Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label
+            >
+          </div>
+          <button class="cta" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
