@@ -566,11 +566,11 @@ end*/
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-} */
+}
 
 .textarea {
   padding: 12px;
